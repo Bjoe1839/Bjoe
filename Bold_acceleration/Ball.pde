@@ -15,28 +15,29 @@ class Ball {
     acceleration.mult(0.2);
     
     velocity.add(acceleration);
+    float d = (dist(mouseX, mouseY, location.x, location.y));
+    velocity.limit(1000/d);
+    
     location.add(velocity);
     
     if (location.x > width-size/2) {
-      location.x = width-size/2;
-      velocity.x *= -0.3;
+      location.x = width-size/2; //<>//
+      velocity.x *= -0.7;
     }
-    else if (location.x < size/2) {
+    if (location.x < size/2) {
       location.x = size/2;
-      velocity.x *= -0.3;
+      velocity.x *= -0.7;
     }
-    else if (location.y > height-size/2) {
+    if (location.y > height-size/2) {
       location.y = height-size/2;
-      velocity.y *= -0.3;
+      velocity.y *= -0.7;
     }
-    else if (location.y < size/2) {
+    if (location.y < size/2) {
       location.y = size/2;
-      velocity.y *= -0.3;
+      velocity.y *= -0.7;
     }
     
     acceleration.mult(0);
-    //kan tilføjes for at få konstant hastighed og faktisk løse opgaven
-    //velocity.mult(0);
   }
   
   void display() {
