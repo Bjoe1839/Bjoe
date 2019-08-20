@@ -1,4 +1,4 @@
-//skulle nok have brugt inheritance eller ikke have lavet en klasse overhovedet
+//skulle nok have brugt inheritance eller ikke have lavet en klasse overhovedet, men havde ikke set længere end første opgave da jeg startede.
 
 Mover mover1;
 Mover mover2;
