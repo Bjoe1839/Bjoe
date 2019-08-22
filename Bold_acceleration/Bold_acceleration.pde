@@ -7,7 +7,7 @@ void setup() {
 }
 
 void draw() {
-  background(0, 0);
+  background(0);
   
   mouse = new PVector(mouseX, mouseY);
   b1.move();
